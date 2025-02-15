@@ -1,9 +1,8 @@
 # Compiled class file
 *.class
 
-# docker & mysql
+# docker
 docker/
-mysql/
 
 # mysql for 
 
