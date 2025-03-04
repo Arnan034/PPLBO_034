@@ -5,7 +5,6 @@
  */
 package com.techie.microservices.B8.order.event;
 
-import org.apache.avro.generic.GenericArray;
 import org.apache.avro.specific.SpecificData;
 import org.apache.avro.util.Utf8;
 import org.apache.avro.message.BinaryMessageEncoder;
@@ -14,10 +13,10 @@ import org.apache.avro.message.SchemaStore;
 
 @org.apache.avro.specific.AvroGenerated
 public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 8747090203382430010L;
+  private static final long serialVersionUID = 4219071678541385818L;
 
 
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"OrderPlacedEvent\",\"namespace\":\"com.techie.microservices.order.event\",\"fields\":[{\"name\":\"orderNumber\",\"type\":\"string\"},{\"name\":\"email\",\"type\":\"string\"},{\"name\":\"firstName\",\"type\":\"string\"},{\"name\":\"lastName\",\"type\":\"string\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"OrderPlacedEvent\",\"namespace\":\"com.techie.microservices.B8.order.event\",\"fields\":[{\"name\":\"orderNumber\",\"type\":\"string\"},{\"name\":\"email\",\"type\":\"string\"},{\"name\":\"firstName\",\"type\":\"string\"},{\"name\":\"lastName\",\"type\":\"string\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static final SpecificData MODEL$ = new SpecificData();
@@ -73,10 +72,10 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
     return DECODER.decode(b);
   }
 
-  private CharSequence orderNumber;
-  private CharSequence email;
-  private CharSequence firstName;
-  private CharSequence lastName;
+  private java.lang.CharSequence orderNumber;
+  private java.lang.CharSequence email;
+  private java.lang.CharSequence firstName;
+  private java.lang.CharSequence lastName;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -92,7 +91,7 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
    * @param firstName The new value for firstName
    * @param lastName The new value for lastName
    */
-  public OrderPlacedEvent(CharSequence orderNumber, CharSequence email, CharSequence firstName, CharSequence lastName) {
+  public OrderPlacedEvent(java.lang.CharSequence orderNumber, java.lang.CharSequence email, java.lang.CharSequence firstName, java.lang.CharSequence lastName) {
     this.orderNumber = orderNumber;
     this.email = email;
     this.firstName = firstName;
@@ -107,7 +106,7 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
 
   // Used by DatumWriter.  Applications should not call.
   @Override
-  public Object get(int field$) {
+  public java.lang.Object get(int field$) {
     switch (field$) {
     case 0: return orderNumber;
     case 1: return email;
@@ -120,12 +119,12 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
   // Used by DatumReader.  Applications should not call.
   @Override
   @SuppressWarnings(value="unchecked")
-  public void put(int field$, Object value$) {
+  public void put(int field$, java.lang.Object value$) {
     switch (field$) {
-    case 0: orderNumber = (CharSequence)value$; break;
-    case 1: email = (CharSequence)value$; break;
-    case 2: firstName = (CharSequence)value$; break;
-    case 3: lastName = (CharSequence)value$; break;
+    case 0: orderNumber = (java.lang.CharSequence)value$; break;
+    case 1: email = (java.lang.CharSequence)value$; break;
+    case 2: firstName = (java.lang.CharSequence)value$; break;
+    case 3: lastName = (java.lang.CharSequence)value$; break;
     default: throw new IndexOutOfBoundsException("Invalid index: " + field$);
     }
   }
@@ -134,7 +133,7 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
    * Gets the value of the 'orderNumber' field.
    * @return The value of the 'orderNumber' field.
    */
-  public CharSequence getOrderNumber() {
+  public java.lang.CharSequence getOrderNumber() {
     return orderNumber;
   }
 
@@ -143,7 +142,7 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
    * Sets the value of the 'orderNumber' field.
    * @param value the value to set.
    */
-  public void setOrderNumber(CharSequence value) {
+  public void setOrderNumber(java.lang.CharSequence value) {
     this.orderNumber = value;
   }
 
@@ -151,7 +150,7 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
    * Gets the value of the 'email' field.
    * @return The value of the 'email' field.
    */
-  public CharSequence getEmail() {
+  public java.lang.CharSequence getEmail() {
     return email;
   }
 
@@ -160,7 +159,7 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
    * Sets the value of the 'email' field.
    * @param value the value to set.
    */
-  public void setEmail(CharSequence value) {
+  public void setEmail(java.lang.CharSequence value) {
     this.email = value;
   }
 
@@ -168,7 +167,7 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
    * Gets the value of the 'firstName' field.
    * @return The value of the 'firstName' field.
    */
-  public CharSequence getFirstName() {
+  public java.lang.CharSequence getFirstName() {
     return firstName;
   }
 
@@ -177,7 +176,7 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
    * Sets the value of the 'firstName' field.
    * @param value the value to set.
    */
-  public void setFirstName(CharSequence value) {
+  public void setFirstName(java.lang.CharSequence value) {
     this.firstName = value;
   }
 
@@ -185,7 +184,7 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
    * Gets the value of the 'lastName' field.
    * @return The value of the 'lastName' field.
    */
-  public CharSequence getLastName() {
+  public java.lang.CharSequence getLastName() {
     return lastName;
   }
 
@@ -194,7 +193,7 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
    * Sets the value of the 'lastName' field.
    * @param value the value to set.
    */
-  public void setLastName(CharSequence value) {
+  public void setLastName(java.lang.CharSequence value) {
     this.lastName = value;
   }
 
@@ -202,8 +201,8 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
    * Creates a new OrderPlacedEvent RecordBuilder.
    * @return A new OrderPlacedEvent RecordBuilder
    */
-  public static Builder newBuilder() {
-    return new Builder();
+  public static com.techie.microservices.B8.order.event.OrderPlacedEvent.Builder newBuilder() {
+    return new com.techie.microservices.B8.order.event.OrderPlacedEvent.Builder();
   }
 
   /**
@@ -211,11 +210,11 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
    * @param other The existing builder to copy.
    * @return A new OrderPlacedEvent RecordBuilder
    */
-  public static Builder newBuilder(Builder other) {
+  public static com.techie.microservices.B8.order.event.OrderPlacedEvent.Builder newBuilder(com.techie.microservices.B8.order.event.OrderPlacedEvent.Builder other) {
     if (other == null) {
-      return new Builder();
+      return new com.techie.microservices.B8.order.event.OrderPlacedEvent.Builder();
     } else {
-      return new Builder(other);
+      return new com.techie.microservices.B8.order.event.OrderPlacedEvent.Builder(other);
     }
   }
 
@@ -224,11 +223,11 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
    * @param other The existing instance to copy.
    * @return A new OrderPlacedEvent RecordBuilder
    */
-  public static Builder newBuilder(OrderPlacedEvent other) {
+  public static com.techie.microservices.B8.order.event.OrderPlacedEvent.Builder newBuilder(com.techie.microservices.B8.order.event.OrderPlacedEvent other) {
     if (other == null) {
-      return new Builder();
+      return new com.techie.microservices.B8.order.event.OrderPlacedEvent.Builder();
     } else {
-      return new Builder(other);
+      return new com.techie.microservices.B8.order.event.OrderPlacedEvent.Builder(other);
     }
   }
 
@@ -239,10 +238,10 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<OrderPlacedEvent>
     implements org.apache.avro.data.RecordBuilder<OrderPlacedEvent> {
 
-    private CharSequence orderNumber;
-    private CharSequence email;
-    private CharSequence firstName;
-    private CharSequence lastName;
+    private java.lang.CharSequence orderNumber;
+    private java.lang.CharSequence email;
+    private java.lang.CharSequence firstName;
+    private java.lang.CharSequence lastName;
 
     /** Creates a new Builder */
     private Builder() {
@@ -253,7 +252,7 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(Builder other) {
+    private Builder(com.techie.microservices.B8.order.event.OrderPlacedEvent.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.orderNumber)) {
         this.orderNumber = data().deepCopy(fields()[0].schema(), other.orderNumber);
@@ -277,7 +276,7 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
      * Creates a Builder by copying an existing OrderPlacedEvent instance
      * @param other The existing instance to copy.
      */
-    private Builder(OrderPlacedEvent other) {
+    private Builder(com.techie.microservices.B8.order.event.OrderPlacedEvent other) {
       super(SCHEMA$, MODEL$);
       if (isValidValue(fields()[0], other.orderNumber)) {
         this.orderNumber = data().deepCopy(fields()[0].schema(), other.orderNumber);
@@ -301,7 +300,7 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
       * Gets the value of the 'orderNumber' field.
       * @return The value.
       */
-    public CharSequence getOrderNumber() {
+    public java.lang.CharSequence getOrderNumber() {
       return orderNumber;
     }
 
@@ -311,7 +310,7 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
       * @param value The value of 'orderNumber'.
       * @return This builder.
       */
-    public Builder setOrderNumber(CharSequence value) {
+    public com.techie.microservices.B8.order.event.OrderPlacedEvent.Builder setOrderNumber(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.orderNumber = value;
       fieldSetFlags()[0] = true;
@@ -331,7 +330,7 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
       * Clears the value of the 'orderNumber' field.
       * @return This builder.
       */
-    public Builder clearOrderNumber() {
+    public com.techie.microservices.B8.order.event.OrderPlacedEvent.Builder clearOrderNumber() {
       orderNumber = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -341,7 +340,7 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
       * Gets the value of the 'email' field.
       * @return The value.
       */
-    public CharSequence getEmail() {
+    public java.lang.CharSequence getEmail() {
       return email;
     }
 
@@ -351,7 +350,7 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
       * @param value The value of 'email'.
       * @return This builder.
       */
-    public Builder setEmail(CharSequence value) {
+    public com.techie.microservices.B8.order.event.OrderPlacedEvent.Builder setEmail(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.email = value;
       fieldSetFlags()[1] = true;
@@ -371,7 +370,7 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
       * Clears the value of the 'email' field.
       * @return This builder.
       */
-    public Builder clearEmail() {
+    public com.techie.microservices.B8.order.event.OrderPlacedEvent.Builder clearEmail() {
       email = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -381,7 +380,7 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
       * Gets the value of the 'firstName' field.
       * @return The value.
       */
-    public CharSequence getFirstName() {
+    public java.lang.CharSequence getFirstName() {
       return firstName;
     }
 
@@ -391,7 +390,7 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
       * @param value The value of 'firstName'.
       * @return This builder.
       */
-    public Builder setFirstName(CharSequence value) {
+    public com.techie.microservices.B8.order.event.OrderPlacedEvent.Builder setFirstName(java.lang.CharSequence value) {
       validate(fields()[2], value);
       this.firstName = value;
       fieldSetFlags()[2] = true;
@@ -411,7 +410,7 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
       * Clears the value of the 'firstName' field.
       * @return This builder.
       */
-    public Builder clearFirstName() {
+    public com.techie.microservices.B8.order.event.OrderPlacedEvent.Builder clearFirstName() {
       firstName = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -421,7 +420,7 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
       * Gets the value of the 'lastName' field.
       * @return The value.
       */
-    public CharSequence getLastName() {
+    public java.lang.CharSequence getLastName() {
       return lastName;
     }
 
@@ -431,7 +430,7 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
       * @param value The value of 'lastName'.
       * @return This builder.
       */
-    public Builder setLastName(CharSequence value) {
+    public com.techie.microservices.B8.order.event.OrderPlacedEvent.Builder setLastName(java.lang.CharSequence value) {
       validate(fields()[3], value);
       this.lastName = value;
       fieldSetFlags()[3] = true;
@@ -451,7 +450,7 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
       * Clears the value of the 'lastName' field.
       * @return This builder.
       */
-    public Builder clearLastName() {
+    public com.techie.microservices.B8.order.event.OrderPlacedEvent.Builder clearLastName() {
       lastName = null;
       fieldSetFlags()[3] = false;
       return this;
@@ -462,14 +461,14 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
     public OrderPlacedEvent build() {
       try {
         OrderPlacedEvent record = new OrderPlacedEvent();
-        record.orderNumber = fieldSetFlags()[0] ? this.orderNumber : (CharSequence) defaultValue(fields()[0]);
-        record.email = fieldSetFlags()[1] ? this.email : (CharSequence) defaultValue(fields()[1]);
-        record.firstName = fieldSetFlags()[2] ? this.firstName : (CharSequence) defaultValue(fields()[2]);
-        record.lastName = fieldSetFlags()[3] ? this.lastName : (CharSequence) defaultValue(fields()[3]);
+        record.orderNumber = fieldSetFlags()[0] ? this.orderNumber : (java.lang.CharSequence) defaultValue(fields()[0]);
+        record.email = fieldSetFlags()[1] ? this.email : (java.lang.CharSequence) defaultValue(fields()[1]);
+        record.firstName = fieldSetFlags()[2] ? this.firstName : (java.lang.CharSequence) defaultValue(fields()[2]);
+        record.lastName = fieldSetFlags()[3] ? this.lastName : (java.lang.CharSequence) defaultValue(fields()[3]);
         return record;
       } catch (org.apache.avro.AvroMissingFieldException e) {
         throw e;
-      } catch (Exception e) {
+      } catch (java.lang.Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
       }
     }
@@ -547,3 +546,13 @@ public class OrderPlacedEvent extends org.apache.avro.specific.SpecificRecordBas
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
